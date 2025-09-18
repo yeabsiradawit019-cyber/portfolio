@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yeabsira Dawit | Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #f4f7fb; color: #333; line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; border-radius: 12px; }
+    section { padding: 80px 20px; max-width: 1200px; margin: auto; }
+
+    /* Navbar */
+    nav { position: fixed; top: 0; width: 100%; background: linear-gradient(90deg, #6a11cb, #2575fc); color: #fff;
+      display: flex; justify-content: space-between; align-items: center; padding: 15px 40px; z-index: 1000; }
+    nav h1 { font-size: 1.5rem; }
+    nav ul { display: flex; list-style: none; }
+    nav ul li { margin-left: 20px; }
+    nav ul li a { color: white; font-weight: bold; transition: color 0.3s; }
+    nav ul li a:hover { color: #ffd700; }
+
+    /* Hero */
+    #home { display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap; padding-top: 120px; }
+    #home .text { flex: 1; }
+    #home h2 { font-size: 2.8rem; margin-bottom: 15px; color: #2575fc; }
+    #home h3 { font-size: 1.6rem; margin-bottom: 15px; }
+    #home p { font-size: 1.1rem; margin-bottom: 20px; }
+    #home img { width: 300px; border-radius: 50%; box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
+
+    /* Section headers */
+    h2.section-title { font-size: 2.2rem; text-align: center; margin-bottom: 50px; color: #2575fc; }
+
+    /* Grid cards */
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+    .card { background: white; border-radius: 12px; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+
+    /* Buttons */
+    .btn { display: inline-block; padding: 12px 24px; border-radius: 8px; background: linear-gradient(90deg, #6a11cb, #2575fc); color: #fff;
+      font-weight: bold; transition: opacity 0.3s; }
+    .btn:hover { opacity: 0.85; }
+
+    /* Contact */
+    .contact-info { text-align: center; }
+    .contact-info p { margin: 10px 0; }
+
+    /* Footer */
+    footer { text-align: center; padding: 20px; background: #333; color: white; margin-top: 40px; }
+
+    /* Smooth scroll */
+    html { scroll-behavior: smooth; }
+
+    @media(max-width: 768px) {
+      nav { flex-direction: column; }
+      #home { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1>Yeabsira Dawit</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home -->
+  <section id="home">
+    <div class="text">
+      <h2>Yeabsira Dawit</h2>
+      <h3>Back-End Developer</h3>
+      <p>“See what's next.”</p>
+      <p>Curiosity-driven innovator passionate about AI and designing future-focused solutions.</p>
+      <a href="files/resume.pdf" class="btn" download>Download Resume</a>
+    </div>
+    <img src="images/IMG_20250918_134116_358.jpg" alt="Yeabsira Dawit">
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      I am a back-end developer specializing in Python. I enjoy solving complex problems and building reliable systems.
+      My skills include working with databases, designing APIs, and applying AI techniques to real-world challenges.
+      I believe in continuous learning and curiosity-driven innovation.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>AI Chatbot</h3>
+        <p>A Python-powered chatbot using NLP and machine learning to deliver human-like interactions.</p>
+      </div>
+      <div class="card">
+        <h3>API for E-Commerce</h3>
+        <p>Back-end REST API built with Django, handling payments, products, and user accounts.</p>
+      </div>
+      <div class="card">
+        <h3>Database Optimizer</h3>
+        <p>A tool that analyzes SQL queries and suggests optimizations to improve performance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates -->
+  <section id="certificates">
+    <h2 class="section-title">Certificates</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="images/image of.jpg" alt="Certificate">
+        <p>My professional certification in technology and development.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:jodavid25046@gmail.com">jodavid25046@gmail.com</a></p>
+      <p>Let’s connect and work together on exciting projects!</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Yeabsira Dawit. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
