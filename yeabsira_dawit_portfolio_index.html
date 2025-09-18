@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yeabsira Dawit — Portfolio</title>
+  <meta name="description" content="Yeabsira Dawit — Back-end Developer (Python). Curiosity-driven innovator passionate about AI and designing future-focused solutions." />
+  <style>
+    :root{--bg:#f6f8fb;--card:#ffffff;--accent:#1f6feb;--muted:#657786;--maxw:1000px}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:var(--bg); color:#0b1220}
+    .container{max-width:var(--maxw);margin:28px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .brand img{width:72px;height:72px;object-fit:cover;border-radius:8px;border:2px solid #e6eefc}
+    h1{margin:0;font-size:20px}
+    .role{color:var(--muted);font-size:13px}
+    nav a{margin-left:12px;text-decoration:none;color:var(--accent);font-weight:600}
+
+    main{margin-top:22px}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:24px;align-items:center}
+    .card{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 6px 20px rgba(11,18,32,0.06)}
+    .tagline{color:var(--muted);margin-top:8px}
+    .cta{margin-top:16px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+
+    /* Grid sections */
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:18px}
+    .full{grid-column:1 / -1}
+    .skill{display:flex;justify-content:space-between;padding:10px 12px;border-radius:8px;background:#fbfdff}
+
+    /* Projects */
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .project{padding:12px;border-radius:10px;background:#fafbff}
+
+    footer{margin-top:26px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* Responsive */
+    @media(max-width:900px){.hero{grid-template-columns:1fr} .projects{grid-template-columns:1fr} .grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <img src="images/profile.jpg" alt="Yeabsira Dawit — profile" id="profileImage">
+        <div>
+          <h1>Yeabsira Dawit</h1>
+          <div class="role">Back-end Developer — Python</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#home" data-nav>Home</a>
+        <a href="#about" data-nav>About</a>
+        <a href="#resume" data-nav>Resume</a>
+        <a href="#projects" data-nav>Projects</a>
+        <a href="#certs" data-nav>Certificates</a>
+        <a href="#challenges" data-nav>Challenges</a>
+        <a href="#contact" data-nav>Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Home / Hero -->
+      <section id="home" class="card">
+        <div class="hero">
+          <div>
+            <h2>See what's next.</h2>
+            <p class="tagline">Curiosity-driven innovator passionate about AI and designing future-focused solutions.</p>
+            <p style="margin-top:14px">I build resilient back-end systems and data-driven services using Python. I enjoy turning ideas into production-ready code and exploring ways AI can make products smarter.</p>
+            <div class="cta">
+              <a class="btn" href="#contact">Get in touch</a>
+              <a style="margin-left:10px;text-decoration:none;color:var(--accent);font-weight:600" href="#projects">See projects →</a>
+            </div>
+          </div>
+          <aside class="card" style="padding:18px">
+            <h3 style="margin:0 0 8px 0">Contact</h3>
+            <div style="color:var(--muted);font-size:14px">Email</div>
+            <div style="font-weight:700">jodavid25046@gmail.com</div>
+            <div style="margin-top:12px;color:var(--muted);font-size:14px">Location</div>
+            <div>Available for remote opportunities</div>
+            <div style="margin-top:12px"><a class="btn" href="mailto:jodavid25046@gmail.com">Email me</a></div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="card" style="margin-top:16px">
+        <h3>About Me</h3>
+        <p>I'm Yeabsira, a back-end developer who primarily uses Python. I focus on building scalable server-side logic, APIs, and data pipelines. I'm driven by curiosity and enjoy applying machine learning and automation to real-world problems.</p>
+        <p>I like clean, maintainable code and collaborating with product teams to ship features that have clear user value. Outside of coding, I read about AI trends and experiment with small projects that explore new tooling.</p>
+      </section>
+
+      <!-- Resume -->
+      <section id="resume" class="card" style="margin-top:16px">
+        <h3>Resume</h3>
+        <div class="grid">
+          <div>
+            <h4>Experience</h4>
+            <div style="margin-top:8px">
+              <strong>Back-end Developer — Freelance</strong>
+              <div style="color:var(--muted);font-size:13px">2023 — Present</div>
+              <ul>
+                <li>Designed RESTful APIs and implemented authentication and authorization flows.</li>
+                <li>Built data-processing scripts and scheduled jobs using Python.</li>
+                <li>Improved service reliability with testing and monitoring.</li>
+              </ul>
+            </div>
+            <div style="margin-top:8px">
+              <strong>Python Developer — Python Summer Course (project)</strong>
+              <div style="color:var(--muted);font-size:13px">Certificate program</div>
+              <ul>
+                <li>Completed intensive Python coursework covering core data structures, OOP and basic web development.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <h4>Education</h4>
+            <div>
+              <strong>Relevant coursework</strong>
+              <div style="color:var(--muted);font-size:13px">Python development & foundations</div>
+            </div>
+
+            <h4 style="margin-top:12px">Skills</h4>
+            <div class="skill"> <span>Python</span><span>Advanced</span></div>
+            <div class="skill" style="margin-top:8px"> <span>APIs / Flask / FastAPI</span><span>Intermediate</span></div>
+            <div class="skill" style="margin-top:8px"> <span>Databases (Postgres, SQLite)</span><span>Intermediate</span></div>
+            <div class="skill" style="margin-top:8px"> <span>Docker / Dev tooling</span><span>Beginner</span></div>
+          </div>
+
+          <div class="full">
+            <h4>Download</h4>
+            <p>You can add a downloadable resume (PDF) named <code>resume.pdf</code> into the <code>files/</code> folder; the button below will automatically link to it.</p>
+            <a class="btn" id="downloadResume" href="files/resume.pdf" target="_blank">Download resume (placeholder)</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="card" style="margin-top:16px">
+        <h3>Projects</h3>
+        <div class="projects">
+          <div class="project">
+            <strong>Sample API (example)</strong>
+            <div style="color:var(--muted);font-size:13px">A REST API built with FastAPI for a demo product.</div>
+            <div style="margin-top:8px">Tech: Python, FastAPI, Postgres, Docker</div>
+            <div style="margin-top:8px"><a href="#" style="text-decoration:none;color:var(--accent);font-weight:600">View on GitHub →</a></div>
+          </div>
+          <div class="project">
+            <strong>Data pipeline (example)</strong>
+            <div style="color:var(--muted);font-size:13px">ETL scripts to ingest and transform CSV/JSON data into a Postgres DB.</div>
+            <div style="margin-top:8px">Tech: Python, Pandas, SQL</div>
+            <div style="margin-top:8px"><a href="#" style="text-decoration:none;color:var(--accent);font-weight:600">View code →</a></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certificates -->
+      <section id="certs" class="card" style="margin-top:16px">
+        <h3>Certificates & Achievements</h3>
+        <p>Python Summer Course — Halutech</p>
+        <div style="margin-top:12px">
+          <img src="images/certificate.jpg" alt="certificate" style="max-width:420px;border-radius:8px;border:1px solid #eef3ff">
+        </div>
+      </section>
+
+      <!-- Challenges -->
+      <section id="challenges" class="card" style="margin-top:16px">
+        <h3>Challenges & Experiences</h3>
+        <article>
+          <h4>Shipping a reliable API under tight time constraints</h4>
+          <p>I had to deliver an MVP API quickly for a small product. I prioritized a minimal schema, added clear tests for core endpoints, and used lightweight monitoring. The result was a stable beta that allowed the team to iterate safely.</p>
+        </article>
+        <article style="margin-top:12px">
+          <h4>Learning AI tools while building practical features</h4>
+          <p>To incorporate smart features, I experimented with small ML models and APIs, focusing on integration and user impact rather than pursuing cutting-edge accuracy. This helped ship features faster and informed future iterations.</p>
+        </article>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="card" style="margin-top:16px">
+        <h3>Contact</h3>
+        <p>If you'd like to work together or ask about my projects, email me at <strong>jodavid25046@gmail.com</strong> or use the form below.</p>
+        <form id="contactForm" onsubmit="handleContact(event)" style="margin-top:12px;display:grid;gap:8px;max-width:520px">
+          <input name="name" placeholder="Your name" required style="padding:10px;border-radius:8px;border:1px solid #e6eefc">
+          <input name="email" type="email" placeholder="Your email" required style="padding:10px;border-radius:8px;border:1px solid #e6eefc">
+          <textarea name="message" rows="5" placeholder="Message" required style="padding:10px;border-radius:8px;border:1px solid #e6eefc"></textarea>
+          <div>
+            <button class="btn">Send message</button>
+          </div>
+        </form>
+      </section>
+
+    </main>
+
+    <footer>
+      © <span id="year"></span> Yeabsira Dawit — Back-end Developer • Built with HTML & plain CSS
+    </footer>
+  </div>
+
+  <script>
+    // small router: show sections by hash
+    function route(){
+      const hash = location.hash || '#home';
+      const id = hash.replace('#','');
+      const el = document.getElementById(id);
+      if(el){
+        el.scrollIntoView({behavior:'smooth'});
+      }
+    }
+    window.addEventListener('hashchange', route);
+    window.addEventListener('load', ()=>{
+      document.getElementById('year').textContent = (new Date()).getFullYear();
+      route();
+      // fallback: if profile or certificate images are missing, show placeholders
+      const p = document.getElementById('profileImage');
+      p.onerror = ()=>{ p.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><rect width="100%" height="100%" fill="%23eef6ff"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%2399b3d6" font-family="Arial" font-size="18">Profile</text></svg>' }
+    });
+
+    function handleContact(e){
+      e.preventDefault();
+      const f = e.target;
+      const name = f.name.value.trim();
+      const email = f.email.value.trim();
+      const message = f.message.value.trim();
+      // open mailto as a simple way to contact
+      const subject = encodeURIComponent('Portfolio contact from '+name);
+      const body = encodeURIComponent('Name: '+name+'\nEmail: '+email+'\n\n'+message);
+      window.location.href = 'mailto:jodavid25046@gmail.com?subject='+subject+'&body='+body;
+    }
+  </script>
+</body>
+</html>
